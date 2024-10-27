@@ -1,0 +1,387 @@
+
+/*Start Global Rules*/
+
+:root{
+
+    /*Colors*/
+    --gunmetal: hsl(212, 16%, 16%);
+    --grey: hsl(0, 1%, 70%);
+    --bg-landing-color:#FAFAFA;
+    --bg-secondary-color: #F3F5F7;
+
+}
+
+/*Start Reset*/
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {list-style: none;}
+
+a,img,span,button{
+    display: block;
+}
+
+img{
+    height: auto;
+}
+
+button{
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+/*End Reset*/
+
+
+
+/*End Global Rules*/
+
+/*Start Header*/
+
+.header{
+   padding-top: 20px;
+  
+   margin: 0;
+   background-color: white;
+   z-index: 4;
+}
+.header .container{
+    
+}
+.header .container #logo{
+    width: 120px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.header .container ul{
+    display: flex;
+}
+
+.header .container ul li{
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header .container ul li a{
+    text-decoration: none;
+    color: var(--grey);
+    padding-bottom: 38px;
+    transition: 0.2s;
+}
+
+.header .container ul li a:hover{
+    color: var(--gunmetal);
+    border-bottom: 4px solid #69C686;
+   
+}
+
+.header .container button{
+    font-size: 15px;
+    background-image: linear-gradient(to right,#3CD273,#3CBDD7);
+    border-radius: 40px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.header .container button:hover{
+    opacity: 0.75;
+}
+
+/*End Header*/
+
+/*Start Landing*/
+
+.landing{
+    background-color: var(--bg-landing-color);
+}
+
+.landing .container{
+    display: flex;
+}
+
+.landing .container .block1{
+     padding: 200px 140px;
+     width: 800px;
+    justify-content: flex-start;
+}
+
+.landing .container .block1 h1{
+    font-size: 60px;
+    font-weight: 400;  
+    color: #3C3A4B;
+}
+.landing .container .block1 p{
+    color: rgb(171, 171, 171);
+    font-size: 20px;
+    line-height: 1.9;
+    padding-bottom: 20px;
+}
+
+.landing .container .block1 button{
+    font-size: 15px;
+    background-image: linear-gradient(to right,#3CD273,#3CBDD7);
+    border-radius: 40px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.landing .container .block1 button:hover{
+    opacity: 0.75;
+}
+
+.landing .container .block2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 1000px;
+    height: 800px;
+}
+
+#bg,#phone{
+     position: absolute;
+     width: 80%;
+     height: 100%;
+     object-fit: cover;
+}
+
+ 
+/*End Landing*/
+
+
+/*Start Services*/
+
+.Services {
+    background-color: var(--bg-secondary-color);
+}
+
+.Services .container{
+     padding: 120px;
+     line-height: 1.8;
+}
+
+.Services .container h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: #3C3A4B;
+}
+
+.Services .container p:nth-child(2){
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(171, 171, 171);
+    padding-bottom: 50px;
+    width: 500px;
+}
+
+.Services .container .block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.Services .container .block .block1{
+    padding-right: 10px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.Services .container .block .block1 img{
+    padding-bottom: 20px;
+}
+
+.Services .container .block .block1 h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #3C3A4B;
+}
+
+
+.Services .container .block .block1 p{
+    font-size: 16px;
+
+    color: rgb(171, 171, 171);
+}
+
+/*End Services*/
+
+/*Start Articles*/
+
+.Articles{
+    background-color: #FAFAFA;
+}
+
+.Articles .container{
+    padding: 120px;
+}
+
+.Articles .container h1{
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 50px;
+    color: #3C3A4B;
+}
+
+.Articles .container .block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Articles .container .block .block1{
+    width: 330px;
+    background-color: white;
+    border-radius: 10px;
+     margin-right: 10px;
+     margin-bottom: 30px;
+}
+.Articles .container .block .block1:hover{
+    cursor: pointer;
+
+}
+
+.Articles .container .block .block1:hover h3{
+    color: #63ab78;
+}
+
+.Articles .container .block .block1 h5{
+    color: rgb(171, 171, 171);
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding: 10px 20px;
+}
+
+
+.Articles .container .block .block1 h3{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    color: #777777;
+    padding-bottom: 10px;
+}
+
+
+.Articles .container .block .block1 p{
+    color: rgb(171, 171, 171);
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.Articles .container .block .block1 img{
+    width: 330px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+/*End Articles*/
+
+/*Start Footer*/
+
+.Footer{
+    background-color: #2C3045;
+   
+}
+
+.Footer .container{
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .container .socialMedia{
+    display: flex;
+    margin-top: 30px;
+ 
+}
+
+
+.Footer .container .socialMedia img{
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+.Footer .container .socialMedia img:hover{
+    cursor: pointer;
+}
+
+.Footer .container .infos{
+     display: flex;
+}
+
+.Footer .container .infos ul{
+    margin-right: 80px;
+}
+
+
+.Footer .container .infos ul li a{
+     color: rgb(171, 171, 171);
+     text-decoration: none;
+     font-size: 16px;
+     line-height: 1.8;
+}
+
+.Footer .container button{
+    font-size: 15px;
+    background-image: linear-gradient(to right,#3CD273,#3CBDD7);
+    border-radius: 40px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.Footer .container  button:hover{
+    opacity: 0.75;
+}
+
+
+.Footer .container .block2 p{
+    padding-top: 30px;
+    font-size: 15px;
+    color: var(--grey);
+}
+
+
+/*End Footer*/
