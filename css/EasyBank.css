@@ -119,6 +119,89 @@ body{
 .header .container button:hover{
     opacity: 0.75;
 }
+.header .container #menu{
+   display: none;
+}
+
+.menuBlock {
+    display: none;
+}
+
+@media( max-width: 900px){
+
+    .header .container ul{
+        visibility: hidden;
+    }
+    .header .container button{
+        visibility: hidden;
+    }
+    .header .container #menu{
+        display: inline;
+        width: 50px;
+        height: 25px;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    .menuBlock {
+        background-color: var(--bg-landing-color);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .menuBlock .container2{
+        display: block;
+        background-color: rgb(193, 216, 190);
+        border-radius: 10px;
+        width: 400px;
+        margin: 10px auto;
+        opacity: 1;
+    }
+    
+    .menuBlock .container2 ul{
+        padding: 30px 2px; 
+        cursor: pointer;
+    }
+    .menuBlock .container2 ul li a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        padding-bottom: 8px;
+        color: #2C3045;
+        transition: 0.2s;
+        cursor: pointer !important;
+    }
+    
+     
+
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg);  }
+}
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimationReverse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
 
 /*End Header*/
 
@@ -126,10 +209,13 @@ body{
 
 .landing{
     background-color: var(--bg-landing-color);
+    z-index: 1;
+    
 }
 
 .landing .container{
     display: flex;
+    position: relative;
 }
 
 .landing .container .block1{
@@ -247,11 +333,14 @@ body{
 
 .Articles{
     background-color: #FAFAFA;
+    
 }
 
 .Articles .container{
     padding: 120px;
+  
 }
+ 
 
 .Articles .container h1{
     font-size: 45px;
@@ -359,7 +448,13 @@ body{
      text-decoration: none;
      font-size: 16px;
      line-height: 1.8;
+     transition: 0.3s;
 }
+
+.Footer .container .infos ul li a:hover{
+   color: #63ab78;
+}
+
 
 .Footer .container button{
     font-size: 15px;
